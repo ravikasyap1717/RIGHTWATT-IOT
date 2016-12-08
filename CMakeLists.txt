@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.11)
 
 project(RightWatt-IOT)
 
-add_subdirectory(libeventhub/c)
+add_subdirectory(libamqp/c)
 add_subdirectory(libmodbus)
 add_subdirectory(libjsonparser)
 
