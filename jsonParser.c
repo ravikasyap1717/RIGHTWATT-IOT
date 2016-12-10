@@ -20,14 +20,14 @@ void create_json(struct regval *reg_val, int index, int id)
 	tm_info = localtime(&now);
 	strftime(DateTime, 35, "%Y-%m-%dT%H:%M:%S.00000+05:30", tm_info);
 	char Deviceid[12];
-	sprintf(Deviceid, RW_EquipmentId"%03d",id);
+	sprintf(Deviceid,"%s%03d",RW_EquipmentId,id);
 
 	//-------- for different file -------------------//
 /*	char filename[20];
 	sprintf(filename, "test%d.json", no);
 
 	fp = fopen(filename,"w+");*/
-	fp = fopen("test.json","w+");
+	fp = fopen("rightwatt.json","w+");
 	fprintf(fp, "\{\n");
 	fprintf(fp, "\t\"RW_ClientId\": \"%s\",\n ",RW_ClientId);
 	fprintf(fp, "\t\"RW_EquipmentId\": \"%s\",\n ",Deviceid);

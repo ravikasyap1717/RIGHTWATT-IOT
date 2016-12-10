@@ -17,8 +17,11 @@
 #include "buf.h"
 #include <time.h>
 
-#define RW_ClientId "Raspberrypi.Rightwatt"
-#define RW_EquipmentId "111-010-"
+extern char RW_ClientId[];
+extern char RW_EquipmentId[];
+
+//#define RW_ClientId "Raspberrypi.Rightwatt"
+//#define RW_EquipmentId "111-010-"
 
 struct regval
 {

@@ -15,6 +15,7 @@ set(sample_application_c_files
  	./main.c
  	./jsonParser.c
  	./readModbus.c
+ 	./rightWattConf.c
  
  	
 )
@@ -23,6 +24,7 @@ set(sample_application_h_files
     ./amqp.h 
     ./jsonParser.h
     ./readModbus.h  
+    ./rightWattConf.h
 
 )
 
@@ -34,6 +36,7 @@ target_link_libraries(rightwattIOT
     uamqp
     modbus
    JSON_PARSER
+   config
 )
 
 set_property(TARGET rightwattIOT PROPERTY C_STANDARD 99) 

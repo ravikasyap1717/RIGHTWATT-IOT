@@ -1,13 +1,12 @@
 /*
- * send.h
+ * amqp.h
  *
- *  Created on: 09-Nov-2016
+ *  Created on: 08-Dec-2016
  *      Author: ravi
  */
 
-#ifndef SEND_H_
-#define SEND_H_
-
+#ifndef AMQP_H_
+#define AMQP_H_
 
 #ifdef __cplusplus
 extern "C" {
@@ -20,5 +19,4 @@ extern "C" {
 #endif
 
 
-
-#endif /* SEND_H_ */
+#endif /* AMQP_H_ */

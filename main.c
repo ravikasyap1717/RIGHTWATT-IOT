@@ -7,13 +7,20 @@
 
 #include "amqp.h"
 #include "readModbus.h"
-#define NUMBER_OF_METERS 3
+//#define NO_OF_METER 3
+
+extern int NO_OF_METER;
 
 int main(void)
 {
 	char* param;
     clock_t t;
-    for(int id=1; id<=NUMBER_OF_METERS; id++)
+    meterConfig();
+
+    printf("no of meter :%d\n",NO_OF_METER );
+
+
+    for(int id=1; id<=2; id++)
     {
     	t = clock();
     	param = readMeter(id);

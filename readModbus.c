@@ -21,6 +21,7 @@ static uint32_t gettime_ms(void)
 
 char* readMeter(int METERID)
 {
+	int rc;
 	char* param;
 	long size;
 	long lSize;
@@ -28,66 +29,81 @@ char* readMeter(int METERID)
 	modbus_t *ctx = NULL;
 	uint16_t *tab_rp_registers = NULL;
 
-	js = loadfile ( "temp.json" , &lSize );
-	if(!js)
-	{
+	js = loadfile ( "meterparam.json" , &lSize );
+		if(!js)
+		{
+			free(js);
+			log_die("Load file failed");
+		}
+
+		struct regval reg_val[100];
+		int index= json_parser(reg_val, js);
+
+		/*
+		for(int i = 0; i<=index;i++)
+	    {
+	        printf("%s  %d = %d\n",reg_val[i].prop,reg_val[i].reg, reg_val[i].value);
+	    }
+		 */
+
 		free(js);
-		log_die("Load file failed");
-	}
 
-	struct regval reg_val[100];
-	int index= json_parser(reg_val, js);
+	/*	ctx = modbus_new_rtu(UART_PORT, BAUD_RATE, PARITY, BYTESIZE, STOPBITS);
+		if (ctx == NULL)
+		{
+			fprintf(stderr, "Unable to allocate libmodbus context\n");
 
-	/*
-	for(int i = 0; i<=index;i++)
-    {
-        printf("%s  %d = %d\n",reg_val[i].prop,reg_val[i].reg, reg_val[i].value);
-    }
-	 */
+		}
+		else
+		{
+			modbus_set_debug(ctx, TRUE);
 
-	free(js);
+			rc = modbus_set_slave(ctx, METERID);
+			printf("modbus_set_slave return: %d\n",rc);
+			if (rc != 0)
+			{
+				printf("modbus_set_slave: %s \n",modbus_strerror(errno));
+			}
 
-	/*ctx = modbus_new_rtu(UART_PORT, BAUD_RATE, PARITY, BYTESIZE, STOPBITS);
-	if (ctx == NULL)
-	{
-		fprintf(stderr, "Unable to allocate libmodbus context\n");
-		return -1;
-	}
-	modbus_set_debug(ctx, TRUE);
-	modbus_set_slave(ctx, METERID);
+			if (modbus_connect(ctx) == -1)
+			{
+				fprintf(stderr, "Connection failed: %s\n", modbus_strerror(errno));
+				modbus_free(ctx);
 
-	if (modbus_connect(ctx) == -1)
-	{
-		fprintf(stderr, "Connection failed: %s\n", modbus_strerror(errno));
-		modbus_free(ctx);
-		return -1;
-	}*/
+			}*/
 
-	tab_rp_registers = (uint16_t *) malloc(index * sizeof(uint16_t));
-	memset(tab_rp_registers, 0, index * sizeof(uint16_t));
+			tab_rp_registers = (uint16_t *) malloc(index * sizeof(uint16_t));
+			memset(tab_rp_registers, 0, index * sizeof(uint16_t));
 
-	start = gettime_ms();
-	for(int i = 0; i<=index;i++)
-	{
-		modbus_read_registers(ctx, (reg_val[i].reg-1) , 2,tab_rp_registers );
-		reg_val[i].value =modbus_get_float_dcba(tab_rp_registers);
-		// for(int i=0;i<2;i++)
-		printf("\nAddress: %d %c values=%.2f \n", (reg_val[i].reg-1) ,':', reg_val[i].value);
-	}
+			start = gettime_ms();
+			for(int i = 0; i<=index;i++)
+			{
+				rc = modbus_read_registers(ctx, (reg_val[i].reg-1) , 2,tab_rp_registers );
+				reg_val[i].value =modbus_get_float_dcba(tab_rp_registers);
+				// for(int i=0;i<2;i++)
+				printf("\nAddress: %d %c values=%.2f \n", (reg_val[i].reg-1) ,':', reg_val[i].value);
 
-	end = gettime_ms();
-	elapsed = end - start;
+				/*if (rc == -1) {
+					printf("Read registers failed:  %s\n", modbus_strerror(errno));
+				}*/
 
-	/*rate = (index * 2) * G_MSEC_PER_SEC / (end - start);
-	printf("Transfer rate in points/seconds:\n");
-	printf("* %d points/s\n", rate);
-	printf("\n");
-*/
-	create_json(reg_val, index, METERID);
-	free(tab_rp_registers);
+			}
+
+			end = gettime_ms();
+			elapsed = end - start;
+
+			/*rate = (index * 2) * G_MSEC_PER_SEC / (end - start);
+		printf("Transfer rate in points/seconds:\n");
+		printf("* %d points/s\n", rate);
+		printf("\n");
+			 */
+			create_json(reg_val, index, METERID);
+			free(tab_rp_registers);
+			param = loadfile ( "rightwatt.json" , &size );
+			//  printf("mess = %s\n",param);
+		//}
 
 
-	param = loadfile ( "test.json" , &size );
 	return param;
 }
 

@@ -16,15 +16,14 @@
 #include "platform.h"
 #include "readModbus.h"
 
-static const char* connectionString = "Endpoint=sb://rightwatts.servicebus.windows.net/;SharedAccessKeyName=SendPolicy;SharedAccessKey=/THtrIxUv12/pfs31i7DMUEcWfUOJJQNOBrrVAfZKgo=";
-static const char* eventHubPath = "Hub1";
-
-static bool g_bSendProperties = false;
-static bool g_bSendPartitionKey = false;
+//static const char* connectionString = "Endpoint=sb://rightwatts.servicebus.windows.net/;SharedAccessKeyName=SendPolicy;SharedAccessKey=/THtrIxUv12/pfs31i7DMUEcWfUOJJQNOBrrVAfZKgo=";
+//static const char* eventHubPath = "Hub1";
+extern const char connectionString[];
+extern const char eventHubPath[];
 
 static const char PARTITION_KEY_INFO[] = "P001-C001-E001";
 static const char TEST_STRING_VALUE_1[] = "Property_String_Value_1";
-static const char TEST_STRING_VALUE_2[] = "Property_String_Value_2";
+
 
 #define SLEEP_TIME		1000
 #define BUFFER_SIZE     6000
@@ -78,8 +77,7 @@ int amqpSendCloud(char *Parameter)
                     result = 1;
                 }
                 else
-                {
-                    // Add the properties to the Event Data
+                {                    // Add the properties to the Event Data
                     MAP_HANDLE mapProperties = EventData_Properties(eventDataHandle);
                     if (mapProperties != NULL)
                     {
