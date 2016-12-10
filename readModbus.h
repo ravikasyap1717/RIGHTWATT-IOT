@@ -12,10 +12,16 @@
 
 #include <modbus.h>
 
+extern char UART_PORT[];
+extern char PARITY[];
+extern int BAUD_RATE;
+
+/*
 #define METERID1 1
 #define UART_PORT "/dev/ttyUSB0"
 #define BAUD_RATE 19200
 #define PARITY 'N'
+*/
 #define BYTESIZE 8
 #define STOPBITS 1
 
