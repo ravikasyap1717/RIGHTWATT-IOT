@@ -1,0 +1,12 @@
+[Mon Dec 12 18:24:54 2016][/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/rightWattConf.c]
+ 	  [line: 104] [INFO] Successfully Read Configuration file 
+[Mon Dec 12 18:24:54 2016][/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/readModbus.c]
+ 	  [line: 53] [INFO] Meter_id 1 Parameter set with UART_PORT: /dev/ttyUSB0 BAUD_RATE: 19200 PARITY: N, BYTESIZE: 8, STOPBITS : 1
+[Mon Dec 12 18:24:54 2016][/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/readModbus.c]
+ 	  [line: 58] [ERROR] Meter Creation failed: Invalid argument 
+ Check BaudRate,UART PORT,PARITY
+[Mon Dec 12 18:24:54 2016][/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/readModbus.c]
+ 	  [line: 53] [INFO] Meter_id 2 Parameter set with UART_PORT: /dev/ttyUSB0 BAUD_RATE: 19200 PARITY: N, BYTESIZE: 8, STOPBITS : 1
+[Mon Dec 12 18:24:54 2016][/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/readModbus.c]
+ 	  [line: 58] [ERROR] Meter Creation failed: Invalid argument 
+ Check BaudRate,UART PORT,PARITY

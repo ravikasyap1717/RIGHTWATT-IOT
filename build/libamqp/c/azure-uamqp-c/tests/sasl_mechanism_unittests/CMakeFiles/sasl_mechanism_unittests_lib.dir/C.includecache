@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../libamqp/c/azure-uamqp-c/inc/amqpalloc.h
+cstddef
+-
+cstdbool
+-
+cstdlib
+-
+stddef.h
+-
+stdbool.h
+-
+stdlib.h
+-
+
+../libamqp/c/azure-uamqp-c/inc/sasl_mechanism.h
+
+/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/libamqp/c/azure-uamqp-c/src/sasl_mechanism.c
+stdlib.h
+-
+crtdbg.h
+-
+sasl_mechanism.h
+/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/libamqp/c/azure-uamqp-c/src/sasl_mechanism.h
+amqpalloc.h
+/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/libamqp/c/azure-uamqp-c/src/amqpalloc.h
+

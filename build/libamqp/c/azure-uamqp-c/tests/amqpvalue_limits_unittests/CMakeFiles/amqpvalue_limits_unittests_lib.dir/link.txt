@@ -1,0 +1,2 @@
+/usr/bin/ar cq libamqpvalue_limits_unittests_lib.a  CMakeFiles/amqpvalue_limits_unittests_lib.dir/amqpvalue_limits_unittests.cpp.o CMakeFiles/amqpvalue_limits_unittests_lib.dir/__/__/src/amqpvalue.c.o CMakeFiles/amqpvalue_limits_unittests_lib.dir/__/__/src/amqpalloc.c.o
+/usr/bin/ranlib libamqpvalue_limits_unittests_lib.a

@@ -1,0 +1,2 @@
+/usr/bin/ar cq libeventhubclient_unittests_lib.a  CMakeFiles/eventhubclient_unittests_lib.dir/eventhubclient_unittests.cpp.o CMakeFiles/eventhubclient_unittests_lib.dir/__/__/src/eventhubclient.c.o
+/usr/bin/ranlib libeventhubclient_unittests_lib.a

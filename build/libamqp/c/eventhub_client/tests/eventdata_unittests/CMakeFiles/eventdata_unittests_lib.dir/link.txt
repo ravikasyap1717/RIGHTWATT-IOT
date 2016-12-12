@@ -1,0 +1,2 @@
+/usr/bin/ar cq libeventdata_unittests_lib.a  CMakeFiles/eventdata_unittests_lib.dir/eventdata_unittests.cpp.o CMakeFiles/eventdata_unittests_lib.dir/__/__/src/eventdata.c.o
+/usr/bin/ranlib libeventdata_unittests_lib.a

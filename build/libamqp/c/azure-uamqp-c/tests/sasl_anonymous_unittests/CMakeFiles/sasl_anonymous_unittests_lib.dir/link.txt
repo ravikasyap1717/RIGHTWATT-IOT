@@ -1,0 +1,2 @@
+/usr/bin/ar cq libsasl_anonymous_unittests_lib.a  CMakeFiles/sasl_anonymous_unittests_lib.dir/sasl_anonymous_unittests.cpp.o CMakeFiles/sasl_anonymous_unittests_lib.dir/__/__/src/sasl_anonymous.c.o
+/usr/bin/ranlib libsasl_anonymous_unittests_lib.a

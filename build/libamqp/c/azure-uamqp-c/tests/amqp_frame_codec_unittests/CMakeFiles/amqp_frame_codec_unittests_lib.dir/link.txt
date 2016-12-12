@@ -1,0 +1,2 @@
+/usr/bin/ar cq libamqp_frame_codec_unittests_lib.a  CMakeFiles/amqp_frame_codec_unittests_lib.dir/amqp_frame_codec_unittests.cpp.o CMakeFiles/amqp_frame_codec_unittests_lib.dir/__/__/src/amqp_frame_codec.c.o
+/usr/bin/ranlib libamqp_frame_codec_unittests_lib.a
