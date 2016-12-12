@@ -11,6 +11,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <libconfig.h>
+#include <unistd.h>
+#include "rightWattLog.h"
 
 char  UART_PORT[30];
 char PARITY[2];

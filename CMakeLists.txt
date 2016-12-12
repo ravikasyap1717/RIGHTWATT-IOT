@@ -16,7 +16,7 @@ set(sample_application_c_files
  	./jsonParser.c
  	./readModbus.c
  	./rightWattConf.c
- 
+ 	./rightWattLog.c 
  	
 )
 	
@@ -25,6 +25,7 @@ set(sample_application_h_files
     ./jsonParser.h
     ./readModbus.h  
     ./rightWattConf.h
+    ./rightWattLog.h
 
 )
 

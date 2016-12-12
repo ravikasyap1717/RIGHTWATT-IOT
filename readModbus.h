@@ -9,8 +9,8 @@
 #define MODBUSMASTER_H_
 
 #include <stdio.h>
-
 #include <modbus.h>
+#include "rightWattLog.h"
 
 extern char UART_PORT[];
 extern char PARITY[];

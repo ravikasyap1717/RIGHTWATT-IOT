@@ -7,6 +7,7 @@
 
 #include "amqp.h"
 #include "readModbus.h"
+#include "rightWattLog.h"
 //#define NO_OF_METER 3
 
 extern int NO_OF_METER;
@@ -18,7 +19,8 @@ int main(void)
     meterConfig();
 
     printf("no of meter :%d\n",NO_OF_METER );
-
+	//LOG_INFO("Meter_id Parameter set with UART_PORT: %s BAUD_RATE: %d PARITY: %s, BYTESIZE: %d, STOPBITS : %d",UART_PORT, BAUD_RATE, PARITY, BYTESIZE, STOPBITS);
+	//LOG_ERROR("modbus_set_slave: %s ",modbus_strerror(errno));
 
     for(int id=1; id<=2; id++)
     {
