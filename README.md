@@ -1,2 +1,0 @@
-# Rightwatt-IOT
-# Rightwatt-IOT

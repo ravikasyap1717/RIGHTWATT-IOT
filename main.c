@@ -6,18 +6,20 @@
  */
 
 #include "amqp.h"
-#include "readModbus.h"
-#include "rightWattLog.h"
+#include "log_create.h"
+#include "read_meters_address.h"
 //#define NO_OF_METER 3
 
-extern int NO_OF_METER;
+
 
 int main(void)
 {
+	int NO_OF_METER;
 	char* param;
     clock_t t;
-    meterConfig();
+    check_read_config_file();
 
+    NO_OF_METER = read_meter_parameter_int("NO_OF_METERS");
     printf("no of meter :%d\n",NO_OF_METER );
 
     for(int id=1; id<=2; id++)

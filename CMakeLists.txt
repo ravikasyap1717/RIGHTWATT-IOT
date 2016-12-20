@@ -14,25 +14,25 @@ set(sample_application_c_files
  	./amqp.c
  	./main.c
  	./jsonParser.c
- 	./readModbus.c
- 	./rightWattConf.c
- 	./rightWattLog.c 
+ 	./read_meters_address.c
+ 	./read_configuration.c
+ 	./log_create.c
  	
 )
 	
 set(sample_application_h_files
     ./amqp.h 
     ./jsonParser.h
-    ./readModbus.h  
-    ./rightWattConf.h
-    ./rightWattLog.h
+    ./read_meters_address.h
+    ./read_configuration.h
+    ./log_create.h
 
 )
 
-add_executable(rightwattIOT ${sample_application_c_files} ${sample_application_h_files})
+add_executable(rightwattsIOT ${sample_application_c_files} ${sample_application_h_files})
 
 
-target_link_libraries(rightwattIOT
+target_link_libraries(rightwattsIOT
     eventhub_client 
     uamqp
     modbus
@@ -40,4 +40,4 @@ target_link_libraries(rightwattIOT
    config
 )
 
-set_property(TARGET rightwattIOT PROPERTY C_STANDARD 99) 
+set_property(TARGET rightwattsIOT PROPERTY C_STANDARD 99) 

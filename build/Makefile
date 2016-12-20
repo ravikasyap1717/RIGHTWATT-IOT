@@ -143,17 +143,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rightwattIOT
+# Target rules for targets named rightwattsIOT
 
 # Build rule for target.
-rightwattIOT: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rightwattIOT
-.PHONY : rightwattIOT
+rightwattsIOT: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rightwattsIOT
+.PHONY : rightwattsIOT
 
 # fast build rule for target.
-rightwattIOT/fast:
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/build
-.PHONY : rightwattIOT/fast
+rightwattsIOT/fast:
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/build
+.PHONY : rightwattsIOT/fast
 
 #=============================================================================
 # Target rules for targets named uamqp
@@ -550,7 +550,7 @@ amqp.o: amqp.c.o
 
 # target to build an object file
 amqp.c.o:
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/amqp.c.o
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/amqp.c.o
 .PHONY : amqp.c.o
 
 amqp.i: amqp.c.i
@@ -558,7 +558,7 @@ amqp.i: amqp.c.i
 
 # target to preprocess a source file
 amqp.c.i:
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/amqp.c.i
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/amqp.c.i
 .PHONY : amqp.c.i
 
 amqp.s: amqp.c.s
@@ -566,7 +566,7 @@ amqp.s: amqp.c.s
 
 # target to generate assembly for a file
 amqp.c.s:
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/amqp.c.s
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/amqp.c.s
 .PHONY : amqp.c.s
 
 jsonParser.o: jsonParser.c.o
@@ -574,7 +574,7 @@ jsonParser.o: jsonParser.c.o
 
 # target to build an object file
 jsonParser.c.o:
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/jsonParser.c.o
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/jsonParser.c.o
 .PHONY : jsonParser.c.o
 
 jsonParser.i: jsonParser.c.i
@@ -582,7 +582,7 @@ jsonParser.i: jsonParser.c.i
 
 # target to preprocess a source file
 jsonParser.c.i:
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/jsonParser.c.i
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/jsonParser.c.i
 .PHONY : jsonParser.c.i
 
 jsonParser.s: jsonParser.c.s
@@ -590,15 +590,39 @@ jsonParser.s: jsonParser.c.s
 
 # target to generate assembly for a file
 jsonParser.c.s:
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/jsonParser.c.s
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/jsonParser.c.s
 .PHONY : jsonParser.c.s
+
+log_create.o: log_create.c.o
+.PHONY : log_create.o
+
+# target to build an object file
+log_create.c.o:
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/log_create.c.o
+.PHONY : log_create.c.o
+
+log_create.i: log_create.c.i
+.PHONY : log_create.i
+
+# target to preprocess a source file
+log_create.c.i:
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/log_create.c.i
+.PHONY : log_create.c.i
+
+log_create.s: log_create.c.s
+.PHONY : log_create.s
+
+# target to generate assembly for a file
+log_create.c.s:
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/log_create.c.s
+.PHONY : log_create.c.s
 
 main.o: main.c.o
 .PHONY : main.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/main.c.o
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -606,7 +630,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/main.c.i
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -614,80 +638,56 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/main.c.s
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/main.c.s
 .PHONY : main.c.s
 
-readModbus.o: readModbus.c.o
-.PHONY : readModbus.o
+read_configuration.o: read_configuration.c.o
+.PHONY : read_configuration.o
 
 # target to build an object file
-readModbus.c.o:
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/readModbus.c.o
-.PHONY : readModbus.c.o
+read_configuration.c.o:
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/read_configuration.c.o
+.PHONY : read_configuration.c.o
 
-readModbus.i: readModbus.c.i
-.PHONY : readModbus.i
+read_configuration.i: read_configuration.c.i
+.PHONY : read_configuration.i
 
 # target to preprocess a source file
-readModbus.c.i:
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/readModbus.c.i
-.PHONY : readModbus.c.i
+read_configuration.c.i:
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/read_configuration.c.i
+.PHONY : read_configuration.c.i
 
-readModbus.s: readModbus.c.s
-.PHONY : readModbus.s
+read_configuration.s: read_configuration.c.s
+.PHONY : read_configuration.s
 
 # target to generate assembly for a file
-readModbus.c.s:
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/readModbus.c.s
-.PHONY : readModbus.c.s
+read_configuration.c.s:
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/read_configuration.c.s
+.PHONY : read_configuration.c.s
 
-rightWattConf.o: rightWattConf.c.o
-.PHONY : rightWattConf.o
+read_meters_address.o: read_meters_address.c.o
+.PHONY : read_meters_address.o
 
 # target to build an object file
-rightWattConf.c.o:
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/rightWattConf.c.o
-.PHONY : rightWattConf.c.o
+read_meters_address.c.o:
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/read_meters_address.c.o
+.PHONY : read_meters_address.c.o
 
-rightWattConf.i: rightWattConf.c.i
-.PHONY : rightWattConf.i
-
-# target to preprocess a source file
-rightWattConf.c.i:
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/rightWattConf.c.i
-.PHONY : rightWattConf.c.i
-
-rightWattConf.s: rightWattConf.c.s
-.PHONY : rightWattConf.s
-
-# target to generate assembly for a file
-rightWattConf.c.s:
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/rightWattConf.c.s
-.PHONY : rightWattConf.c.s
-
-rightWattLog.o: rightWattLog.c.o
-.PHONY : rightWattLog.o
-
-# target to build an object file
-rightWattLog.c.o:
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/rightWattLog.c.o
-.PHONY : rightWattLog.c.o
-
-rightWattLog.i: rightWattLog.c.i
-.PHONY : rightWattLog.i
+read_meters_address.i: read_meters_address.c.i
+.PHONY : read_meters_address.i
 
 # target to preprocess a source file
-rightWattLog.c.i:
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/rightWattLog.c.i
-.PHONY : rightWattLog.c.i
+read_meters_address.c.i:
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/read_meters_address.c.i
+.PHONY : read_meters_address.c.i
 
-rightWattLog.s: rightWattLog.c.s
-.PHONY : rightWattLog.s
+read_meters_address.s: read_meters_address.c.s
+.PHONY : read_meters_address.s
 
 # target to generate assembly for a file
-rightWattLog.c.s:
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/rightWattLog.c.s
-.PHONY : rightWattLog.c.s
+read_meters_address.c.s:
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/read_meters_address.c.s
+.PHONY : read_meters_address.c.s
 
 # Help Target
 help:
@@ -700,7 +700,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... rightwattIOT"
+	@echo "... rightwattsIOT"
 	@echo "... install/local"
 	@echo "... uamqp"
 	@echo "... aziotsharedutil"
@@ -738,18 +738,18 @@ help:
 	@echo "... jsonParser.o"
 	@echo "... jsonParser.i"
 	@echo "... jsonParser.s"
+	@echo "... log_create.o"
+	@echo "... log_create.i"
+	@echo "... log_create.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... readModbus.o"
-	@echo "... readModbus.i"
-	@echo "... readModbus.s"
-	@echo "... rightWattConf.o"
-	@echo "... rightWattConf.i"
-	@echo "... rightWattConf.s"
-	@echo "... rightWattLog.o"
-	@echo "... rightWattLog.i"
-	@echo "... rightWattLog.s"
+	@echo "... read_configuration.o"
+	@echo "... read_configuration.i"
+	@echo "... read_configuration.s"
+	@echo "... read_meters_address.o"
+	@echo "... read_meters_address.i"
+	@echo "... read_meters_address.s"
 .PHONY : help
 
 

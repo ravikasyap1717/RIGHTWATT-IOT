@@ -53,42 +53,42 @@ CMAKE_SOURCE_DIR = /home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT
 CMAKE_BINARY_DIR = /home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/rightwattIOT.dir
+# Target rules for target CMakeFiles/rightwattsIOT.dir
 
 # All Build rule for target.
-CMakeFiles/rightwattIOT.dir/all: libamqp/c/eventhub_client/CMakeFiles/eventhub_client.dir/all
-CMakeFiles/rightwattIOT.dir/all: libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/all
-CMakeFiles/rightwattIOT.dir/all: libamqp/c/azure-uamqp-c/CMakeFiles/uamqp.dir/all
-CMakeFiles/rightwattIOT.dir/all: libmodbus/CMakeFiles/modbus.dir/all
-CMakeFiles/rightwattIOT.dir/all: libjsonparser/CMakeFiles/JSON_PARSER.dir/all
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/depend
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/build
+CMakeFiles/rightwattsIOT.dir/all: libamqp/c/azure-uamqp-c/CMakeFiles/uamqp.dir/all
+CMakeFiles/rightwattsIOT.dir/all: libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/all
+CMakeFiles/rightwattsIOT.dir/all: libamqp/c/eventhub_client/CMakeFiles/eventhub_client.dir/all
+CMakeFiles/rightwattsIOT.dir/all: libmodbus/CMakeFiles/modbus.dir/all
+CMakeFiles/rightwattsIOT.dir/all: libjsonparser/CMakeFiles/JSON_PARSER.dir/all
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/depend
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/build/CMakeFiles  64 65 66 67 68
-	@echo "Built target rightwattIOT"
-.PHONY : CMakeFiles/rightwattIOT.dir/all
+	@echo "Built target rightwattsIOT"
+.PHONY : CMakeFiles/rightwattsIOT.dir/all
 
 # Include target in all.
-all: CMakeFiles/rightwattIOT.dir/all
+all: CMakeFiles/rightwattsIOT.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/rightwattIOT.dir/rule: cmake_check_build_system
+CMakeFiles/rightwattsIOT.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/build/CMakeFiles 62
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/rightwattIOT.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/rightwattsIOT.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/build/CMakeFiles 0
-.PHONY : CMakeFiles/rightwattIOT.dir/rule
+.PHONY : CMakeFiles/rightwattsIOT.dir/rule
 
 # Convenience name for target.
-rightwattIOT: CMakeFiles/rightwattIOT.dir/rule
-.PHONY : rightwattIOT
+rightwattsIOT: CMakeFiles/rightwattsIOT.dir/rule
+.PHONY : rightwattsIOT
 
 # clean rule for target.
-CMakeFiles/rightwattIOT.dir/clean:
-	$(MAKE) -f CMakeFiles/rightwattIOT.dir/build.make CMakeFiles/rightwattIOT.dir/clean
-.PHONY : CMakeFiles/rightwattIOT.dir/clean
+CMakeFiles/rightwattsIOT.dir/clean:
+	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/clean
+.PHONY : CMakeFiles/rightwattsIOT.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/rightwattIOT.dir/clean
+clean: CMakeFiles/rightwattsIOT.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -948,8 +948,8 @@ libamqp/c/azure-uamqp-c/samples/message_sender_sample/preinstall:
 # Target rules for target libamqp/c/azure-uamqp-c/samples/message_sender_sample/CMakeFiles/message_sender_sample.dir
 
 # All Build rule for target.
-libamqp/c/azure-uamqp-c/samples/message_sender_sample/CMakeFiles/message_sender_sample.dir/all: libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/all
 libamqp/c/azure-uamqp-c/samples/message_sender_sample/CMakeFiles/message_sender_sample.dir/all: libamqp/c/azure-uamqp-c/CMakeFiles/uamqp.dir/all
+libamqp/c/azure-uamqp-c/samples/message_sender_sample/CMakeFiles/message_sender_sample.dir/all: libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/all
 	$(MAKE) -f libamqp/c/azure-uamqp-c/samples/message_sender_sample/CMakeFiles/message_sender_sample.dir/build.make libamqp/c/azure-uamqp-c/samples/message_sender_sample/CMakeFiles/message_sender_sample.dir/depend
 	$(MAKE) -f libamqp/c/azure-uamqp-c/samples/message_sender_sample/CMakeFiles/message_sender_sample.dir/build.make libamqp/c/azure-uamqp-c/samples/message_sender_sample/CMakeFiles/message_sender_sample.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/build/CMakeFiles  51
@@ -999,8 +999,8 @@ libamqp/c/azure-uamqp-c/samples/message_receiver_sample/preinstall:
 # Target rules for target libamqp/c/azure-uamqp-c/samples/message_receiver_sample/CMakeFiles/message_receiver_sample.dir
 
 # All Build rule for target.
-libamqp/c/azure-uamqp-c/samples/message_receiver_sample/CMakeFiles/message_receiver_sample.dir/all: libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/all
 libamqp/c/azure-uamqp-c/samples/message_receiver_sample/CMakeFiles/message_receiver_sample.dir/all: libamqp/c/azure-uamqp-c/CMakeFiles/uamqp.dir/all
+libamqp/c/azure-uamqp-c/samples/message_receiver_sample/CMakeFiles/message_receiver_sample.dir/all: libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/all
 	$(MAKE) -f libamqp/c/azure-uamqp-c/samples/message_receiver_sample/CMakeFiles/message_receiver_sample.dir/build.make libamqp/c/azure-uamqp-c/samples/message_receiver_sample/CMakeFiles/message_receiver_sample.dir/depend
 	$(MAKE) -f libamqp/c/azure-uamqp-c/samples/message_receiver_sample/CMakeFiles/message_receiver_sample.dir/build.make libamqp/c/azure-uamqp-c/samples/message_receiver_sample/CMakeFiles/message_receiver_sample.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/build/CMakeFiles 
@@ -1050,8 +1050,8 @@ libamqp/c/azure-uamqp-c/samples/mssbcbs_sample/preinstall:
 # Target rules for target libamqp/c/azure-uamqp-c/samples/mssbcbs_sample/CMakeFiles/mssbcbs_sample.dir
 
 # All Build rule for target.
-libamqp/c/azure-uamqp-c/samples/mssbcbs_sample/CMakeFiles/mssbcbs_sample.dir/all: libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/all
 libamqp/c/azure-uamqp-c/samples/mssbcbs_sample/CMakeFiles/mssbcbs_sample.dir/all: libamqp/c/azure-uamqp-c/CMakeFiles/uamqp.dir/all
+libamqp/c/azure-uamqp-c/samples/mssbcbs_sample/CMakeFiles/mssbcbs_sample.dir/all: libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/all
 	$(MAKE) -f libamqp/c/azure-uamqp-c/samples/mssbcbs_sample/CMakeFiles/mssbcbs_sample.dir/build.make libamqp/c/azure-uamqp-c/samples/mssbcbs_sample/CMakeFiles/mssbcbs_sample.dir/depend
 	$(MAKE) -f libamqp/c/azure-uamqp-c/samples/mssbcbs_sample/CMakeFiles/mssbcbs_sample.dir/build.make libamqp/c/azure-uamqp-c/samples/mssbcbs_sample/CMakeFiles/mssbcbs_sample.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/build/CMakeFiles 
@@ -1101,8 +1101,8 @@ libamqp/c/azure-uamqp-c/samples/eh_sender_with_sas_token_sample/preinstall:
 # Target rules for target libamqp/c/azure-uamqp-c/samples/eh_sender_with_sas_token_sample/CMakeFiles/eh_sender_with_sas_token_sample.dir
 
 # All Build rule for target.
-libamqp/c/azure-uamqp-c/samples/eh_sender_with_sas_token_sample/CMakeFiles/eh_sender_with_sas_token_sample.dir/all: libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/all
 libamqp/c/azure-uamqp-c/samples/eh_sender_with_sas_token_sample/CMakeFiles/eh_sender_with_sas_token_sample.dir/all: libamqp/c/azure-uamqp-c/CMakeFiles/uamqp.dir/all
+libamqp/c/azure-uamqp-c/samples/eh_sender_with_sas_token_sample/CMakeFiles/eh_sender_with_sas_token_sample.dir/all: libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/all
 	$(MAKE) -f libamqp/c/azure-uamqp-c/samples/eh_sender_with_sas_token_sample/CMakeFiles/eh_sender_with_sas_token_sample.dir/build.make libamqp/c/azure-uamqp-c/samples/eh_sender_with_sas_token_sample/CMakeFiles/eh_sender_with_sas_token_sample.dir/depend
 	$(MAKE) -f libamqp/c/azure-uamqp-c/samples/eh_sender_with_sas_token_sample/CMakeFiles/eh_sender_with_sas_token_sample.dir/build.make libamqp/c/azure-uamqp-c/samples/eh_sender_with_sas_token_sample/CMakeFiles/eh_sender_with_sas_token_sample.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/build/CMakeFiles  40
@@ -1805,8 +1805,8 @@ libamqp/c/eventhub_client/preinstall: libamqp/c/eventhub_client/tests/preinstall
 # Target rules for target libamqp/c/eventhub_client/CMakeFiles/eventhub_client.dir
 
 # All Build rule for target.
-libamqp/c/eventhub_client/CMakeFiles/eventhub_client.dir/all: libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/all
 libamqp/c/eventhub_client/CMakeFiles/eventhub_client.dir/all: libamqp/c/azure-uamqp-c/CMakeFiles/uamqp.dir/all
+libamqp/c/eventhub_client/CMakeFiles/eventhub_client.dir/all: libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/all
 	$(MAKE) -f libamqp/c/eventhub_client/CMakeFiles/eventhub_client.dir/build.make libamqp/c/eventhub_client/CMakeFiles/eventhub_client.dir/depend
 	$(MAKE) -f libamqp/c/eventhub_client/CMakeFiles/eventhub_client.dir/build.make libamqp/c/eventhub_client/CMakeFiles/eventhub_client.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/build/CMakeFiles  42 43 44 45
@@ -1877,9 +1877,9 @@ libamqp/c/eventhub_client/samples/send/preinstall:
 # Target rules for target libamqp/c/eventhub_client/samples/send/CMakeFiles/send.dir
 
 # All Build rule for target.
-libamqp/c/eventhub_client/samples/send/CMakeFiles/send.dir/all: libamqp/c/eventhub_client/CMakeFiles/eventhub_client.dir/all
-libamqp/c/eventhub_client/samples/send/CMakeFiles/send.dir/all: libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/all
 libamqp/c/eventhub_client/samples/send/CMakeFiles/send.dir/all: libamqp/c/azure-uamqp-c/CMakeFiles/uamqp.dir/all
+libamqp/c/eventhub_client/samples/send/CMakeFiles/send.dir/all: libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/all
+libamqp/c/eventhub_client/samples/send/CMakeFiles/send.dir/all: libamqp/c/eventhub_client/CMakeFiles/eventhub_client.dir/all
 	$(MAKE) -f libamqp/c/eventhub_client/samples/send/CMakeFiles/send.dir/build.make libamqp/c/eventhub_client/samples/send/CMakeFiles/send.dir/depend
 	$(MAKE) -f libamqp/c/eventhub_client/samples/send/CMakeFiles/send.dir/build.make libamqp/c/eventhub_client/samples/send/CMakeFiles/send.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/build/CMakeFiles  77
@@ -1929,9 +1929,9 @@ libamqp/c/eventhub_client/samples/send_batch/preinstall:
 # Target rules for target libamqp/c/eventhub_client/samples/send_batch/CMakeFiles/send_batch.dir
 
 # All Build rule for target.
-libamqp/c/eventhub_client/samples/send_batch/CMakeFiles/send_batch.dir/all: libamqp/c/eventhub_client/CMakeFiles/eventhub_client.dir/all
-libamqp/c/eventhub_client/samples/send_batch/CMakeFiles/send_batch.dir/all: libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/all
 libamqp/c/eventhub_client/samples/send_batch/CMakeFiles/send_batch.dir/all: libamqp/c/azure-uamqp-c/CMakeFiles/uamqp.dir/all
+libamqp/c/eventhub_client/samples/send_batch/CMakeFiles/send_batch.dir/all: libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/all
+libamqp/c/eventhub_client/samples/send_batch/CMakeFiles/send_batch.dir/all: libamqp/c/eventhub_client/CMakeFiles/eventhub_client.dir/all
 	$(MAKE) -f libamqp/c/eventhub_client/samples/send_batch/CMakeFiles/send_batch.dir/build.make libamqp/c/eventhub_client/samples/send_batch/CMakeFiles/send_batch.dir/depend
 	$(MAKE) -f libamqp/c/eventhub_client/samples/send_batch/CMakeFiles/send_batch.dir/build.make libamqp/c/eventhub_client/samples/send_batch/CMakeFiles/send_batch.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/build/CMakeFiles  78 79
@@ -1981,9 +1981,9 @@ libamqp/c/eventhub_client/samples/sendasync/preinstall:
 # Target rules for target libamqp/c/eventhub_client/samples/sendasync/CMakeFiles/sendasync.dir
 
 # All Build rule for target.
-libamqp/c/eventhub_client/samples/sendasync/CMakeFiles/sendasync.dir/all: libamqp/c/eventhub_client/CMakeFiles/eventhub_client.dir/all
-libamqp/c/eventhub_client/samples/sendasync/CMakeFiles/sendasync.dir/all: libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/all
 libamqp/c/eventhub_client/samples/sendasync/CMakeFiles/sendasync.dir/all: libamqp/c/azure-uamqp-c/CMakeFiles/uamqp.dir/all
+libamqp/c/eventhub_client/samples/sendasync/CMakeFiles/sendasync.dir/all: libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/all
+libamqp/c/eventhub_client/samples/sendasync/CMakeFiles/sendasync.dir/all: libamqp/c/eventhub_client/CMakeFiles/eventhub_client.dir/all
 	$(MAKE) -f libamqp/c/eventhub_client/samples/sendasync/CMakeFiles/sendasync.dir/build.make libamqp/c/eventhub_client/samples/sendasync/CMakeFiles/sendasync.dir/depend
 	$(MAKE) -f libamqp/c/eventhub_client/samples/sendasync/CMakeFiles/sendasync.dir/build.make libamqp/c/eventhub_client/samples/sendasync/CMakeFiles/sendasync.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/build/CMakeFiles  80

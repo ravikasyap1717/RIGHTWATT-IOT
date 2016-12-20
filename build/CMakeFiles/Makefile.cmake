@@ -176,7 +176,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/rightwattIOT.dir/DependInfo.cmake"
+  "CMakeFiles/rightwattsIOT.dir/DependInfo.cmake"
   "libamqp/c/azure-uamqp-c/CMakeFiles/uamqp.dir/DependInfo.cmake"
   "libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/DependInfo.cmake"
   "libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/testtools/ctest/CMakeFiles/ctest.dir/DependInfo.cmake"

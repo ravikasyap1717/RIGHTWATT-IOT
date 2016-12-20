@@ -14,24 +14,18 @@
 #include "threadapi.h"
 #include "crt_abstractions.h"
 #include "platform.h"
-#include "readModbus.h"
+#include "read_meters_address.h"
 
-//static const char* connectionString = "Endpoint=sb://rightwatts.servicebus.windows.net/;SharedAccessKeyName=SendPolicy;SharedAccessKey=/THtrIxUv12/pfs31i7DMUEcWfUOJJQNOBrrVAfZKgo=";
-//static const char* eventHubPath = "Hub1";
 
-extern const char connectionString[];
-extern const char eventHubPath[];
-
-static const char PARTITION_KEY_INFO[] = "P001-C001-E001";
+static const  char* connectionString;
+static const char* eventHubPath;
+static const char PARTITION_KEY_INFO[] = "PartitionKeyInfo";
 static const char TEST_STRING_VALUE_1[] = "Property_String_Value_1";
 
 
 #define SLEEP_TIME		1000
 #define BUFFER_SIZE     6000
 static size_t g_id = 1000;
-
-//char *mess ="RW_ClientId:RaviKumar,RW_EquipmentId:1,RW_ReadingDateTime:121,A:1.0,A1:2.1,A2:3.1,A3:4.1,VLL:5.1,VLN:6.1,V12:7.1,V23:0.0,V31:1.1,V1:1.1,V2:2.1,V3:1.1,W:12.1,W1:1.1,W2:1.1,W3:1.1,VA:1.1,VA1:1.1,VA2:1.1,VA3:1.1,PF:1.1,PF1:1.1,PF2:1.1,PF3:1.1,F:1.1,VAh_U:1.1,Wh_U:1.1,On_U:1.1,Run_U:1.1,VAh_G:1.1,Wh_G:1.1,On_G:1.1,Run_G:1.1,Present_Demand:1.1,Rising_Demand:1.1,MAX_MD_U:1.1,Max_DM_Occurence:1.1,Percentage_Avg_Load:1.1,Percentage_L1:1.1,Percentage_L2:1.1,Percentage_L3:1.1,Unbalanced_Load:1.1,Unbalanced_voltage:1.1";
-//char* mess = "{\"RW_ClientId\":\"RaviKumar\", \"RW_EquipmentId\":\"123\"}""{\"RW_ClientId\":\"RaviKumar\", \"RW_EquipmentId\":\"123\"}"
 
 
 int amqpSendCloud(char *Parameter)
@@ -47,7 +41,7 @@ int amqpSendCloud(char *Parameter)
   //  printf("mess = %s\n",msgContent);
     // size_t msgLength = sprintf_s(msgContent, BUFFER_SIZE, "{\"RW_ClientId:RaviKumar,RW_EquipmentId:1,RW_ReadingDateTime:121,A:1.0,A1:2.1,A2:3.1,A3:4.1,VLL:5.1,VLN:6.1,V12:7.1,V23:0.0,V31:1.1,V1:1.1,V2:2.1,V3:1.1,W:12.1,W1:1.1,W2:1.1,W3:1.1,VA:1.1,VA1:1.1,VA2:1.1,VA3:1.1,PF:1.1,PF1:1.1,PF2:1.1,PF3:1.1,F:1.1,VAh_U:1.1,Wh_U:1.1,On_U:1.1,Run_U:1.1,VAh_G:1.1,Wh_G:1.1,On_G:1.1,Run_G:1.1,Present_Demand:1.1,Rising_Demand:1.1,MAX_MD_U:1.1,Max_DM_Occurence:1.1,Percentage_Avg_Load:1.1,Percentage_L1:1.1,Percentage_L2:1.1,Percentage_L3:1.1,Unbalanced_Load:1.1,Unbalanced_voltage:1.1\"}");
 
-    (void)printf("Starting the EventHub Client Send Sample (%s)...\r\n", EventHubClient_GetVersionString());
+    (void)printf("Starting the EventHub Client version to send Meter data ...\r\n", EventHubClient_GetVersionString());
 
     if (platform_init() != 0)
     {
@@ -66,6 +60,8 @@ int amqpSendCloud(char *Parameter)
         }
         else
         {
+        	connectionString = read_meter_parameter_string("AZURE_EVENT_HUB_CONNECTION_STRING");
+        	eventHubPath = read_meter_parameter_string("AZURE_EVENT_HUB_PATH");
             EVENTHUBCLIENT_HANDLE eventHubClientHandle = EventHubClient_CreateFromConnectionString(connectionString, eventHubPath);
             if (eventHubClientHandle == NULL)
             {

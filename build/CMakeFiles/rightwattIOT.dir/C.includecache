@@ -221,6 +221,8 @@ modbus.h
 -
 rightWattLog.h
 /home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/rightWattLog.h
+rightWattConf.h
+/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/rightWattConf.h
 unistd.h
 -
 sys/time.h

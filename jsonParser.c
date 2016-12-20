@@ -19,19 +19,22 @@ void create_json(struct regval *reg_val, int index, int id)
 	time(&now);
 	tm_info = localtime(&now);
 	strftime(DateTime, 35, "%Y-%m-%dT%H:%M:%S.00000+05:30", tm_info);
-	char Deviceid[12];
-	sprintf(Deviceid,"%s%03d",RW_EquipmentId,id);
+
+
+	RW_CLIENT_ID = read_meter_parameter_string("RW_CLIENT_ID");
+	RW_EQUIPMENT_ID_PREFIX = read_meter_parameter_string("RW_EQUIPMENT_ID_PREFIX");
+	sprintf(RW_EQUIPMENT_ID,"%s%03d",RW_EQUIPMENT_ID_PREFIX,id);
 
 	//-------- for different file -------------------//
 /*	char filename[20];
 	sprintf(filename, "test%d.json", no);
 
 	fp = fopen(filename,"w+");*/
-	fp = fopen("rightwatt.json","w+");
-	fprintf(fp, "\{\n");
-	fprintf(fp, "\t\"RW_ClientId\": \"%s\",\n ",RW_ClientId);
-	fprintf(fp, "\t\"RW_EquipmentId\": \"%s\",\n ",Deviceid);
-	fprintf(fp, "\t\"RW_ReadingDateTime\": \"%s\",\n",DateTime);
+	fp = fopen("output_generated_meter_readings.json","w+");
+	fprintf(fp, "\{");
+	fprintf(fp, "\t\"RW_ClientId\": \"%s\", ",RW_CLIENT_ID);
+	fprintf(fp, "\t\"RW_EquipmentId\": \"%s\", ",RW_EQUIPMENT_ID);
+	fprintf(fp, "\t\"RW_ReadingDateTime\": \"%s\",",DateTime);
 
 
 	for(int i=0; i<=index; i++)
@@ -40,16 +43,16 @@ void create_json(struct regval *reg_val, int index, int id)
 		// fprintf(fp, "\"register\": \"%d\", ", reg_val[i].reg);
 		if(i == index)
 		{
-			fprintf(fp, "%.2f \n ", reg_val[i].value);
+			fprintf(fp, "%.2f  ", reg_val[i].value);
 		}
 		else
 		{	if(strcmp(reg_val[i].prop,"Run_U")==0 ||strcmp(reg_val[i].prop,"Run_G")==0 || strcmp(reg_val[i].prop,"Max_DM_Occurrence")==0)
-			fprintf(fp, "%ld, \n ", reg_val[i].value);
+			fprintf(fp, "%ld,  ", reg_val[i].value);
 		else
-			fprintf(fp, "%.2f, \n ", reg_val[i].value);
+			fprintf(fp, "%.2f,  ", reg_val[i].value);
 		}
 	}
-	fprintf(fp, "}\n");
+	fprintf(fp, "}");
 
 	fclose(fp);
 }

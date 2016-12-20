@@ -17,9 +17,9 @@
 #include "buf.h"
 #include <time.h>
 
-extern char RW_ClientId[];
-extern char RW_EquipmentId[];
-
+const char* RW_EQUIPMENT_ID_PREFIX;
+const char* RW_CLIENT_ID;
+const char RW_EQUIPMENT_ID[20];
 //#define RW_ClientId "Raspberrypi.Rightwatt"
 //#define RW_EquipmentId "111-010-"
 

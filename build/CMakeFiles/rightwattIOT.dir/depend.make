@@ -21,6 +21,7 @@ CMakeFiles/rightwattIOT.dir/amqp.c.o: ../libmodbus/src/modbus.h
 CMakeFiles/rightwattIOT.dir/amqp.c.o: ../amqp.c
 CMakeFiles/rightwattIOT.dir/amqp.c.o: ../amqp.h
 CMakeFiles/rightwattIOT.dir/amqp.c.o: ../readModbus.h
+CMakeFiles/rightwattIOT.dir/amqp.c.o: ../rightWattConf.h
 CMakeFiles/rightwattIOT.dir/amqp.c.o: ../rightWattLog.h
 
 CMakeFiles/rightwattIOT.dir/jsonParser.c.o: ../libjsonparser/buf.h
@@ -39,6 +40,7 @@ CMakeFiles/rightwattIOT.dir/main.c.o: ../libmodbus/src/modbus.h
 CMakeFiles/rightwattIOT.dir/main.c.o: ../amqp.h
 CMakeFiles/rightwattIOT.dir/main.c.o: ../main.c
 CMakeFiles/rightwattIOT.dir/main.c.o: ../readModbus.h
+CMakeFiles/rightwattIOT.dir/main.c.o: ../rightWattConf.h
 CMakeFiles/rightwattIOT.dir/main.c.o: ../rightWattLog.h
 
 CMakeFiles/rightwattIOT.dir/readModbus.c.o: ../libjsonparser/buf.h
@@ -54,6 +56,7 @@ CMakeFiles/rightwattIOT.dir/readModbus.c.o: ../libmodbus/src/modbus.h
 CMakeFiles/rightwattIOT.dir/readModbus.c.o: ../jsonParser.h
 CMakeFiles/rightwattIOT.dir/readModbus.c.o: ../readModbus.c
 CMakeFiles/rightwattIOT.dir/readModbus.c.o: ../readModbus.h
+CMakeFiles/rightwattIOT.dir/readModbus.c.o: ../rightWattConf.h
 CMakeFiles/rightwattIOT.dir/readModbus.c.o: ../rightWattLog.h
 
 CMakeFiles/rightwattIOT.dir/rightWattConf.c.o: ../rightWattConf.c
