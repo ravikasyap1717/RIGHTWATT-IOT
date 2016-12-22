@@ -143,17 +143,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rightwattsIOT
+# Target rules for targets named rightwatts_IOT
 
 # Build rule for target.
-rightwattsIOT: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rightwattsIOT
-.PHONY : rightwattsIOT
+rightwatts_IOT: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rightwatts_IOT
+.PHONY : rightwatts_IOT
 
 # fast build rule for target.
-rightwattsIOT/fast:
-	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/build
-.PHONY : rightwattsIOT/fast
+rightwatts_IOT/fast:
+	$(MAKE) -f CMakeFiles/rightwatts_IOT.dir/build.make CMakeFiles/rightwatts_IOT.dir/build
+.PHONY : rightwatts_IOT/fast
 
 #=============================================================================
 # Target rules for targets named uamqp
@@ -165,7 +165,7 @@ uamqp: cmake_check_build_system
 
 # fast build rule for target.
 uamqp/fast:
-	$(MAKE) -f libamqp/c/azure-uamqp-c/CMakeFiles/uamqp.dir/build.make libamqp/c/azure-uamqp-c/CMakeFiles/uamqp.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/azure-uamqp-c/CMakeFiles/uamqp.dir/build.make lib_azure_event_hub/c/azure-uamqp-c/CMakeFiles/uamqp.dir/build
 .PHONY : uamqp/fast
 
 #=============================================================================
@@ -178,7 +178,7 @@ aziotsharedutil: cmake_check_build_system
 
 # fast build rule for target.
 aziotsharedutil/fast:
-	$(MAKE) -f libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/build.make libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/build.make lib_azure_event_hub/c/azure-uamqp-c/azure-c-shared-utility/c/CMakeFiles/aziotsharedutil.dir/build
 .PHONY : aziotsharedutil/fast
 
 #=============================================================================
@@ -191,7 +191,7 @@ ctest: cmake_check_build_system
 
 # fast build rule for target.
 ctest/fast:
-	$(MAKE) -f libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/testtools/ctest/CMakeFiles/ctest.dir/build.make libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/testtools/ctest/CMakeFiles/ctest.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/azure-uamqp-c/azure-c-shared-utility/c/testtools/ctest/CMakeFiles/ctest.dir/build.make lib_azure_event_hub/c/azure-uamqp-c/azure-c-shared-utility/c/testtools/ctest/CMakeFiles/ctest.dir/build
 .PHONY : ctest/fast
 
 #=============================================================================
@@ -204,7 +204,7 @@ micromock_ctest: cmake_check_build_system
 
 # fast build rule for target.
 micromock_ctest/fast:
-	$(MAKE) -f libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/testtools/micromock/CMakeFiles/micromock_ctest.dir/build.make libamqp/c/azure-uamqp-c/azure-c-shared-utility/c/testtools/micromock/CMakeFiles/micromock_ctest.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/azure-uamqp-c/azure-c-shared-utility/c/testtools/micromock/CMakeFiles/micromock_ctest.dir/build.make lib_azure_event_hub/c/azure-uamqp-c/azure-c-shared-utility/c/testtools/micromock/CMakeFiles/micromock_ctest.dir/build
 .PHONY : micromock_ctest/fast
 
 #=============================================================================
@@ -217,7 +217,7 @@ message_sender_sample: cmake_check_build_system
 
 # fast build rule for target.
 message_sender_sample/fast:
-	$(MAKE) -f libamqp/c/azure-uamqp-c/samples/message_sender_sample/CMakeFiles/message_sender_sample.dir/build.make libamqp/c/azure-uamqp-c/samples/message_sender_sample/CMakeFiles/message_sender_sample.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/azure-uamqp-c/samples/message_sender_sample/CMakeFiles/message_sender_sample.dir/build.make lib_azure_event_hub/c/azure-uamqp-c/samples/message_sender_sample/CMakeFiles/message_sender_sample.dir/build
 .PHONY : message_sender_sample/fast
 
 #=============================================================================
@@ -230,7 +230,7 @@ message_receiver_sample: cmake_check_build_system
 
 # fast build rule for target.
 message_receiver_sample/fast:
-	$(MAKE) -f libamqp/c/azure-uamqp-c/samples/message_receiver_sample/CMakeFiles/message_receiver_sample.dir/build.make libamqp/c/azure-uamqp-c/samples/message_receiver_sample/CMakeFiles/message_receiver_sample.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/azure-uamqp-c/samples/message_receiver_sample/CMakeFiles/message_receiver_sample.dir/build.make lib_azure_event_hub/c/azure-uamqp-c/samples/message_receiver_sample/CMakeFiles/message_receiver_sample.dir/build
 .PHONY : message_receiver_sample/fast
 
 #=============================================================================
@@ -243,7 +243,7 @@ mssbcbs_sample: cmake_check_build_system
 
 # fast build rule for target.
 mssbcbs_sample/fast:
-	$(MAKE) -f libamqp/c/azure-uamqp-c/samples/mssbcbs_sample/CMakeFiles/mssbcbs_sample.dir/build.make libamqp/c/azure-uamqp-c/samples/mssbcbs_sample/CMakeFiles/mssbcbs_sample.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/azure-uamqp-c/samples/mssbcbs_sample/CMakeFiles/mssbcbs_sample.dir/build.make lib_azure_event_hub/c/azure-uamqp-c/samples/mssbcbs_sample/CMakeFiles/mssbcbs_sample.dir/build
 .PHONY : mssbcbs_sample/fast
 
 #=============================================================================
@@ -256,7 +256,7 @@ eh_sender_with_sas_token_sample: cmake_check_build_system
 
 # fast build rule for target.
 eh_sender_with_sas_token_sample/fast:
-	$(MAKE) -f libamqp/c/azure-uamqp-c/samples/eh_sender_with_sas_token_sample/CMakeFiles/eh_sender_with_sas_token_sample.dir/build.make libamqp/c/azure-uamqp-c/samples/eh_sender_with_sas_token_sample/CMakeFiles/eh_sender_with_sas_token_sample.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/azure-uamqp-c/samples/eh_sender_with_sas_token_sample/CMakeFiles/eh_sender_with_sas_token_sample.dir/build.make lib_azure_event_hub/c/azure-uamqp-c/samples/eh_sender_with_sas_token_sample/CMakeFiles/eh_sender_with_sas_token_sample.dir/build
 .PHONY : eh_sender_with_sas_token_sample/fast
 
 #=============================================================================
@@ -269,7 +269,7 @@ amqp_frame_codec_unittests_lib: cmake_check_build_system
 
 # fast build rule for target.
 amqp_frame_codec_unittests_lib/fast:
-	$(MAKE) -f libamqp/c/azure-uamqp-c/tests/amqp_frame_codec_unittests/CMakeFiles/amqp_frame_codec_unittests_lib.dir/build.make libamqp/c/azure-uamqp-c/tests/amqp_frame_codec_unittests/CMakeFiles/amqp_frame_codec_unittests_lib.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/azure-uamqp-c/tests/amqp_frame_codec_unittests/CMakeFiles/amqp_frame_codec_unittests_lib.dir/build.make lib_azure_event_hub/c/azure-uamqp-c/tests/amqp_frame_codec_unittests/CMakeFiles/amqp_frame_codec_unittests_lib.dir/build
 .PHONY : amqp_frame_codec_unittests_lib/fast
 
 #=============================================================================
@@ -282,7 +282,7 @@ amqpvalue_limits_unittests_lib: cmake_check_build_system
 
 # fast build rule for target.
 amqpvalue_limits_unittests_lib/fast:
-	$(MAKE) -f libamqp/c/azure-uamqp-c/tests/amqpvalue_limits_unittests/CMakeFiles/amqpvalue_limits_unittests_lib.dir/build.make libamqp/c/azure-uamqp-c/tests/amqpvalue_limits_unittests/CMakeFiles/amqpvalue_limits_unittests_lib.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/azure-uamqp-c/tests/amqpvalue_limits_unittests/CMakeFiles/amqpvalue_limits_unittests_lib.dir/build.make lib_azure_event_hub/c/azure-uamqp-c/tests/amqpvalue_limits_unittests/CMakeFiles/amqpvalue_limits_unittests_lib.dir/build
 .PHONY : amqpvalue_limits_unittests_lib/fast
 
 #=============================================================================
@@ -295,7 +295,7 @@ amqpvalue_unittests_lib: cmake_check_build_system
 
 # fast build rule for target.
 amqpvalue_unittests_lib/fast:
-	$(MAKE) -f libamqp/c/azure-uamqp-c/tests/amqpvalue_unittests/CMakeFiles/amqpvalue_unittests_lib.dir/build.make libamqp/c/azure-uamqp-c/tests/amqpvalue_unittests/CMakeFiles/amqpvalue_unittests_lib.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/azure-uamqp-c/tests/amqpvalue_unittests/CMakeFiles/amqpvalue_unittests_lib.dir/build.make lib_azure_event_hub/c/azure-uamqp-c/tests/amqpvalue_unittests/CMakeFiles/amqpvalue_unittests_lib.dir/build
 .PHONY : amqpvalue_unittests_lib/fast
 
 #=============================================================================
@@ -308,7 +308,7 @@ connection_unittests_lib: cmake_check_build_system
 
 # fast build rule for target.
 connection_unittests_lib/fast:
-	$(MAKE) -f libamqp/c/azure-uamqp-c/tests/connection_unittests/CMakeFiles/connection_unittests_lib.dir/build.make libamqp/c/azure-uamqp-c/tests/connection_unittests/CMakeFiles/connection_unittests_lib.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/azure-uamqp-c/tests/connection_unittests/CMakeFiles/connection_unittests_lib.dir/build.make lib_azure_event_hub/c/azure-uamqp-c/tests/connection_unittests/CMakeFiles/connection_unittests_lib.dir/build
 .PHONY : connection_unittests_lib/fast
 
 #=============================================================================
@@ -321,7 +321,7 @@ frame_codec_unittests_lib: cmake_check_build_system
 
 # fast build rule for target.
 frame_codec_unittests_lib/fast:
-	$(MAKE) -f libamqp/c/azure-uamqp-c/tests/frame_codec_unittests/CMakeFiles/frame_codec_unittests_lib.dir/build.make libamqp/c/azure-uamqp-c/tests/frame_codec_unittests/CMakeFiles/frame_codec_unittests_lib.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/azure-uamqp-c/tests/frame_codec_unittests/CMakeFiles/frame_codec_unittests_lib.dir/build.make lib_azure_event_hub/c/azure-uamqp-c/tests/frame_codec_unittests/CMakeFiles/frame_codec_unittests_lib.dir/build
 .PHONY : frame_codec_unittests_lib/fast
 
 #=============================================================================
@@ -334,7 +334,7 @@ message_unittests_lib: cmake_check_build_system
 
 # fast build rule for target.
 message_unittests_lib/fast:
-	$(MAKE) -f libamqp/c/azure-uamqp-c/tests/message_unittests/CMakeFiles/message_unittests_lib.dir/build.make libamqp/c/azure-uamqp-c/tests/message_unittests/CMakeFiles/message_unittests_lib.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/azure-uamqp-c/tests/message_unittests/CMakeFiles/message_unittests_lib.dir/build.make lib_azure_event_hub/c/azure-uamqp-c/tests/message_unittests/CMakeFiles/message_unittests_lib.dir/build
 .PHONY : message_unittests_lib/fast
 
 #=============================================================================
@@ -347,7 +347,7 @@ sasl_anonymous_unittests_lib: cmake_check_build_system
 
 # fast build rule for target.
 sasl_anonymous_unittests_lib/fast:
-	$(MAKE) -f libamqp/c/azure-uamqp-c/tests/sasl_anonymous_unittests/CMakeFiles/sasl_anonymous_unittests_lib.dir/build.make libamqp/c/azure-uamqp-c/tests/sasl_anonymous_unittests/CMakeFiles/sasl_anonymous_unittests_lib.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/azure-uamqp-c/tests/sasl_anonymous_unittests/CMakeFiles/sasl_anonymous_unittests_lib.dir/build.make lib_azure_event_hub/c/azure-uamqp-c/tests/sasl_anonymous_unittests/CMakeFiles/sasl_anonymous_unittests_lib.dir/build
 .PHONY : sasl_anonymous_unittests_lib/fast
 
 #=============================================================================
@@ -360,7 +360,7 @@ sasl_frame_codec_unittests_lib: cmake_check_build_system
 
 # fast build rule for target.
 sasl_frame_codec_unittests_lib/fast:
-	$(MAKE) -f libamqp/c/azure-uamqp-c/tests/sasl_frame_codec_unittests/CMakeFiles/sasl_frame_codec_unittests_lib.dir/build.make libamqp/c/azure-uamqp-c/tests/sasl_frame_codec_unittests/CMakeFiles/sasl_frame_codec_unittests_lib.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/azure-uamqp-c/tests/sasl_frame_codec_unittests/CMakeFiles/sasl_frame_codec_unittests_lib.dir/build.make lib_azure_event_hub/c/azure-uamqp-c/tests/sasl_frame_codec_unittests/CMakeFiles/sasl_frame_codec_unittests_lib.dir/build
 .PHONY : sasl_frame_codec_unittests_lib/fast
 
 #=============================================================================
@@ -373,7 +373,7 @@ sasl_mechanism_unittests_lib: cmake_check_build_system
 
 # fast build rule for target.
 sasl_mechanism_unittests_lib/fast:
-	$(MAKE) -f libamqp/c/azure-uamqp-c/tests/sasl_mechanism_unittests/CMakeFiles/sasl_mechanism_unittests_lib.dir/build.make libamqp/c/azure-uamqp-c/tests/sasl_mechanism_unittests/CMakeFiles/sasl_mechanism_unittests_lib.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/azure-uamqp-c/tests/sasl_mechanism_unittests/CMakeFiles/sasl_mechanism_unittests_lib.dir/build.make lib_azure_event_hub/c/azure-uamqp-c/tests/sasl_mechanism_unittests/CMakeFiles/sasl_mechanism_unittests_lib.dir/build
 .PHONY : sasl_mechanism_unittests_lib/fast
 
 #=============================================================================
@@ -386,7 +386,7 @@ sasl_plain_unittests_lib: cmake_check_build_system
 
 # fast build rule for target.
 sasl_plain_unittests_lib/fast:
-	$(MAKE) -f libamqp/c/azure-uamqp-c/tests/sasl_plain_unittests/CMakeFiles/sasl_plain_unittests_lib.dir/build.make libamqp/c/azure-uamqp-c/tests/sasl_plain_unittests/CMakeFiles/sasl_plain_unittests_lib.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/azure-uamqp-c/tests/sasl_plain_unittests/CMakeFiles/sasl_plain_unittests_lib.dir/build.make lib_azure_event_hub/c/azure-uamqp-c/tests/sasl_plain_unittests/CMakeFiles/sasl_plain_unittests_lib.dir/build
 .PHONY : sasl_plain_unittests_lib/fast
 
 #=============================================================================
@@ -399,7 +399,7 @@ session_unittests_lib: cmake_check_build_system
 
 # fast build rule for target.
 session_unittests_lib/fast:
-	$(MAKE) -f libamqp/c/azure-uamqp-c/tests/session_unittests/CMakeFiles/session_unittests_lib.dir/build.make libamqp/c/azure-uamqp-c/tests/session_unittests/CMakeFiles/session_unittests_lib.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/azure-uamqp-c/tests/session_unittests/CMakeFiles/session_unittests_lib.dir/build.make lib_azure_event_hub/c/azure-uamqp-c/tests/session_unittests/CMakeFiles/session_unittests_lib.dir/build
 .PHONY : session_unittests_lib/fast
 
 #=============================================================================
@@ -412,7 +412,7 @@ saslclientio_unittests_lib: cmake_check_build_system
 
 # fast build rule for target.
 saslclientio_unittests_lib/fast:
-	$(MAKE) -f libamqp/c/azure-uamqp-c/tests/saslclientio_unittests/CMakeFiles/saslclientio_unittests_lib.dir/build.make libamqp/c/azure-uamqp-c/tests/saslclientio_unittests/CMakeFiles/saslclientio_unittests_lib.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/azure-uamqp-c/tests/saslclientio_unittests/CMakeFiles/saslclientio_unittests_lib.dir/build.make lib_azure_event_hub/c/azure-uamqp-c/tests/saslclientio_unittests/CMakeFiles/saslclientio_unittests_lib.dir/build
 .PHONY : saslclientio_unittests_lib/fast
 
 #=============================================================================
@@ -425,7 +425,7 @@ eventhub_client: cmake_check_build_system
 
 # fast build rule for target.
 eventhub_client/fast:
-	$(MAKE) -f libamqp/c/eventhub_client/CMakeFiles/eventhub_client.dir/build.make libamqp/c/eventhub_client/CMakeFiles/eventhub_client.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/eventhub_client/CMakeFiles/eventhub_client.dir/build.make lib_azure_event_hub/c/eventhub_client/CMakeFiles/eventhub_client.dir/build
 .PHONY : eventhub_client/fast
 
 #=============================================================================
@@ -438,7 +438,7 @@ send: cmake_check_build_system
 
 # fast build rule for target.
 send/fast:
-	$(MAKE) -f libamqp/c/eventhub_client/samples/send/CMakeFiles/send.dir/build.make libamqp/c/eventhub_client/samples/send/CMakeFiles/send.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/eventhub_client/samples/send/CMakeFiles/send.dir/build.make lib_azure_event_hub/c/eventhub_client/samples/send/CMakeFiles/send.dir/build
 .PHONY : send/fast
 
 #=============================================================================
@@ -451,7 +451,7 @@ send_batch: cmake_check_build_system
 
 # fast build rule for target.
 send_batch/fast:
-	$(MAKE) -f libamqp/c/eventhub_client/samples/send_batch/CMakeFiles/send_batch.dir/build.make libamqp/c/eventhub_client/samples/send_batch/CMakeFiles/send_batch.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/eventhub_client/samples/send_batch/CMakeFiles/send_batch.dir/build.make lib_azure_event_hub/c/eventhub_client/samples/send_batch/CMakeFiles/send_batch.dir/build
 .PHONY : send_batch/fast
 
 #=============================================================================
@@ -464,7 +464,7 @@ sendasync: cmake_check_build_system
 
 # fast build rule for target.
 sendasync/fast:
-	$(MAKE) -f libamqp/c/eventhub_client/samples/sendasync/CMakeFiles/sendasync.dir/build.make libamqp/c/eventhub_client/samples/sendasync/CMakeFiles/sendasync.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/eventhub_client/samples/sendasync/CMakeFiles/sendasync.dir/build.make lib_azure_event_hub/c/eventhub_client/samples/sendasync/CMakeFiles/sendasync.dir/build
 .PHONY : sendasync/fast
 
 #=============================================================================
@@ -477,7 +477,7 @@ eventdata_unittests_lib: cmake_check_build_system
 
 # fast build rule for target.
 eventdata_unittests_lib/fast:
-	$(MAKE) -f libamqp/c/eventhub_client/tests/eventdata_unittests/CMakeFiles/eventdata_unittests_lib.dir/build.make libamqp/c/eventhub_client/tests/eventdata_unittests/CMakeFiles/eventdata_unittests_lib.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/eventhub_client/tests/eventdata_unittests/CMakeFiles/eventdata_unittests_lib.dir/build.make lib_azure_event_hub/c/eventhub_client/tests/eventdata_unittests/CMakeFiles/eventdata_unittests_lib.dir/build
 .PHONY : eventdata_unittests_lib/fast
 
 #=============================================================================
@@ -490,7 +490,7 @@ eventhubclient_unittests_lib: cmake_check_build_system
 
 # fast build rule for target.
 eventhubclient_unittests_lib/fast:
-	$(MAKE) -f libamqp/c/eventhub_client/tests/eventhubclient_unittests/CMakeFiles/eventhubclient_unittests_lib.dir/build.make libamqp/c/eventhub_client/tests/eventhubclient_unittests/CMakeFiles/eventhubclient_unittests_lib.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/eventhub_client/tests/eventhubclient_unittests/CMakeFiles/eventhubclient_unittests_lib.dir/build.make lib_azure_event_hub/c/eventhub_client/tests/eventhubclient_unittests/CMakeFiles/eventhubclient_unittests_lib.dir/build
 .PHONY : eventhubclient_unittests_lib/fast
 
 #=============================================================================
@@ -503,7 +503,7 @@ eventhubclient_ll_unittests_lib: cmake_check_build_system
 
 # fast build rule for target.
 eventhubclient_ll_unittests_lib/fast:
-	$(MAKE) -f libamqp/c/eventhub_client/tests/eventhubclient_ll_unittests/CMakeFiles/eventhubclient_ll_unittests_lib.dir/build.make libamqp/c/eventhub_client/tests/eventhubclient_ll_unittests/CMakeFiles/eventhubclient_ll_unittests_lib.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/eventhub_client/tests/eventhubclient_ll_unittests/CMakeFiles/eventhubclient_ll_unittests_lib.dir/build.make lib_azure_event_hub/c/eventhub_client/tests/eventhubclient_ll_unittests/CMakeFiles/eventhubclient_ll_unittests_lib.dir/build
 .PHONY : eventhubclient_ll_unittests_lib/fast
 
 #=============================================================================
@@ -516,7 +516,7 @@ connectionstringparser_unittests_lib: cmake_check_build_system
 
 # fast build rule for target.
 connectionstringparser_unittests_lib/fast:
-	$(MAKE) -f libamqp/c/eventhub_client/tests/connectionstringparser_unittests/CMakeFiles/connectionstringparser_unittests_lib.dir/build.make libamqp/c/eventhub_client/tests/connectionstringparser_unittests/CMakeFiles/connectionstringparser_unittests_lib.dir/build
+	$(MAKE) -f lib_azure_event_hub/c/eventhub_client/tests/connectionstringparser_unittests/CMakeFiles/connectionstringparser_unittests_lib.dir/build.make lib_azure_event_hub/c/eventhub_client/tests/connectionstringparser_unittests/CMakeFiles/connectionstringparser_unittests_lib.dir/build
 .PHONY : connectionstringparser_unittests_lib/fast
 
 #=============================================================================
@@ -529,7 +529,7 @@ modbus: cmake_check_build_system
 
 # fast build rule for target.
 modbus/fast:
-	$(MAKE) -f libmodbus/CMakeFiles/modbus.dir/build.make libmodbus/CMakeFiles/modbus.dir/build
+	$(MAKE) -f lib_modbus/CMakeFiles/modbus.dir/build.make lib_modbus/CMakeFiles/modbus.dir/build
 .PHONY : modbus/fast
 
 #=============================================================================
@@ -542,39 +542,63 @@ JSON_PARSER: cmake_check_build_system
 
 # fast build rule for target.
 JSON_PARSER/fast:
-	$(MAKE) -f libjsonparser/CMakeFiles/JSON_PARSER.dir/build.make libjsonparser/CMakeFiles/JSON_PARSER.dir/build
+	$(MAKE) -f lib_json/CMakeFiles/JSON_PARSER.dir/build.make lib_json/CMakeFiles/JSON_PARSER.dir/build
 .PHONY : JSON_PARSER/fast
 
-amqp.o: amqp.c.o
-.PHONY : amqp.o
+azure_event_hub.o: azure_event_hub.c.o
+.PHONY : azure_event_hub.o
 
 # target to build an object file
-amqp.c.o:
-	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/amqp.c.o
-.PHONY : amqp.c.o
+azure_event_hub.c.o:
+	$(MAKE) -f CMakeFiles/rightwatts_IOT.dir/build.make CMakeFiles/rightwatts_IOT.dir/azure_event_hub.c.o
+.PHONY : azure_event_hub.c.o
 
-amqp.i: amqp.c.i
-.PHONY : amqp.i
+azure_event_hub.i: azure_event_hub.c.i
+.PHONY : azure_event_hub.i
 
 # target to preprocess a source file
-amqp.c.i:
-	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/amqp.c.i
-.PHONY : amqp.c.i
+azure_event_hub.c.i:
+	$(MAKE) -f CMakeFiles/rightwatts_IOT.dir/build.make CMakeFiles/rightwatts_IOT.dir/azure_event_hub.c.i
+.PHONY : azure_event_hub.c.i
 
-amqp.s: amqp.c.s
-.PHONY : amqp.s
+azure_event_hub.s: azure_event_hub.c.s
+.PHONY : azure_event_hub.s
 
 # target to generate assembly for a file
-amqp.c.s:
-	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/amqp.c.s
-.PHONY : amqp.c.s
+azure_event_hub.c.s:
+	$(MAKE) -f CMakeFiles/rightwatts_IOT.dir/build.make CMakeFiles/rightwatts_IOT.dir/azure_event_hub.c.s
+.PHONY : azure_event_hub.c.s
+
+create_log.o: create_log.c.o
+.PHONY : create_log.o
+
+# target to build an object file
+create_log.c.o:
+	$(MAKE) -f CMakeFiles/rightwatts_IOT.dir/build.make CMakeFiles/rightwatts_IOT.dir/create_log.c.o
+.PHONY : create_log.c.o
+
+create_log.i: create_log.c.i
+.PHONY : create_log.i
+
+# target to preprocess a source file
+create_log.c.i:
+	$(MAKE) -f CMakeFiles/rightwatts_IOT.dir/build.make CMakeFiles/rightwatts_IOT.dir/create_log.c.i
+.PHONY : create_log.c.i
+
+create_log.s: create_log.c.s
+.PHONY : create_log.s
+
+# target to generate assembly for a file
+create_log.c.s:
+	$(MAKE) -f CMakeFiles/rightwatts_IOT.dir/build.make CMakeFiles/rightwatts_IOT.dir/create_log.c.s
+.PHONY : create_log.c.s
 
 jsonParser.o: jsonParser.c.o
 .PHONY : jsonParser.o
 
 # target to build an object file
 jsonParser.c.o:
-	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/jsonParser.c.o
+	$(MAKE) -f CMakeFiles/rightwatts_IOT.dir/build.make CMakeFiles/rightwatts_IOT.dir/jsonParser.c.o
 .PHONY : jsonParser.c.o
 
 jsonParser.i: jsonParser.c.i
@@ -582,7 +606,7 @@ jsonParser.i: jsonParser.c.i
 
 # target to preprocess a source file
 jsonParser.c.i:
-	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/jsonParser.c.i
+	$(MAKE) -f CMakeFiles/rightwatts_IOT.dir/build.make CMakeFiles/rightwatts_IOT.dir/jsonParser.c.i
 .PHONY : jsonParser.c.i
 
 jsonParser.s: jsonParser.c.s
@@ -590,63 +614,15 @@ jsonParser.s: jsonParser.c.s
 
 # target to generate assembly for a file
 jsonParser.c.s:
-	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/jsonParser.c.s
+	$(MAKE) -f CMakeFiles/rightwatts_IOT.dir/build.make CMakeFiles/rightwatts_IOT.dir/jsonParser.c.s
 .PHONY : jsonParser.c.s
-
-log_create.o: log_create.c.o
-.PHONY : log_create.o
-
-# target to build an object file
-log_create.c.o:
-	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/log_create.c.o
-.PHONY : log_create.c.o
-
-log_create.i: log_create.c.i
-.PHONY : log_create.i
-
-# target to preprocess a source file
-log_create.c.i:
-	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/log_create.c.i
-.PHONY : log_create.c.i
-
-log_create.s: log_create.c.s
-.PHONY : log_create.s
-
-# target to generate assembly for a file
-log_create.c.s:
-	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/log_create.c.s
-.PHONY : log_create.c.s
-
-main.o: main.c.o
-.PHONY : main.o
-
-# target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/main.c.o
-.PHONY : main.c.o
-
-main.i: main.c.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/main.c.s
-.PHONY : main.c.s
 
 read_configuration.o: read_configuration.c.o
 .PHONY : read_configuration.o
 
 # target to build an object file
 read_configuration.c.o:
-	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/read_configuration.c.o
+	$(MAKE) -f CMakeFiles/rightwatts_IOT.dir/build.make CMakeFiles/rightwatts_IOT.dir/read_configuration.c.o
 .PHONY : read_configuration.c.o
 
 read_configuration.i: read_configuration.c.i
@@ -654,7 +630,7 @@ read_configuration.i: read_configuration.c.i
 
 # target to preprocess a source file
 read_configuration.c.i:
-	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/read_configuration.c.i
+	$(MAKE) -f CMakeFiles/rightwatts_IOT.dir/build.make CMakeFiles/rightwatts_IOT.dir/read_configuration.c.i
 .PHONY : read_configuration.c.i
 
 read_configuration.s: read_configuration.c.s
@@ -662,7 +638,7 @@ read_configuration.s: read_configuration.c.s
 
 # target to generate assembly for a file
 read_configuration.c.s:
-	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/read_configuration.c.s
+	$(MAKE) -f CMakeFiles/rightwatts_IOT.dir/build.make CMakeFiles/rightwatts_IOT.dir/read_configuration.c.s
 .PHONY : read_configuration.c.s
 
 read_meters_address.o: read_meters_address.c.o
@@ -670,7 +646,7 @@ read_meters_address.o: read_meters_address.c.o
 
 # target to build an object file
 read_meters_address.c.o:
-	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/read_meters_address.c.o
+	$(MAKE) -f CMakeFiles/rightwatts_IOT.dir/build.make CMakeFiles/rightwatts_IOT.dir/read_meters_address.c.o
 .PHONY : read_meters_address.c.o
 
 read_meters_address.i: read_meters_address.c.i
@@ -678,7 +654,7 @@ read_meters_address.i: read_meters_address.c.i
 
 # target to preprocess a source file
 read_meters_address.c.i:
-	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/read_meters_address.c.i
+	$(MAKE) -f CMakeFiles/rightwatts_IOT.dir/build.make CMakeFiles/rightwatts_IOT.dir/read_meters_address.c.i
 .PHONY : read_meters_address.c.i
 
 read_meters_address.s: read_meters_address.c.s
@@ -686,8 +662,32 @@ read_meters_address.s: read_meters_address.c.s
 
 # target to generate assembly for a file
 read_meters_address.c.s:
-	$(MAKE) -f CMakeFiles/rightwattsIOT.dir/build.make CMakeFiles/rightwattsIOT.dir/read_meters_address.c.s
+	$(MAKE) -f CMakeFiles/rightwatts_IOT.dir/build.make CMakeFiles/rightwatts_IOT.dir/read_meters_address.c.s
 .PHONY : read_meters_address.c.s
+
+rightwatts_main.o: rightwatts_main.c.o
+.PHONY : rightwatts_main.o
+
+# target to build an object file
+rightwatts_main.c.o:
+	$(MAKE) -f CMakeFiles/rightwatts_IOT.dir/build.make CMakeFiles/rightwatts_IOT.dir/rightwatts_main.c.o
+.PHONY : rightwatts_main.c.o
+
+rightwatts_main.i: rightwatts_main.c.i
+.PHONY : rightwatts_main.i
+
+# target to preprocess a source file
+rightwatts_main.c.i:
+	$(MAKE) -f CMakeFiles/rightwatts_IOT.dir/build.make CMakeFiles/rightwatts_IOT.dir/rightwatts_main.c.i
+.PHONY : rightwatts_main.c.i
+
+rightwatts_main.s: rightwatts_main.c.s
+.PHONY : rightwatts_main.s
+
+# target to generate assembly for a file
+rightwatts_main.c.s:
+	$(MAKE) -f CMakeFiles/rightwatts_IOT.dir/build.make CMakeFiles/rightwatts_IOT.dir/rightwatts_main.c.s
+.PHONY : rightwatts_main.c.s
 
 # Help Target
 help:
@@ -699,8 +699,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... install"
+	@echo "... rightwatts_IOT"
 	@echo "... list_install_components"
-	@echo "... rightwattsIOT"
 	@echo "... install/local"
 	@echo "... uamqp"
 	@echo "... aziotsharedutil"
@@ -732,24 +732,24 @@ help:
 	@echo "... connectionstringparser_unittests_lib"
 	@echo "... modbus"
 	@echo "... JSON_PARSER"
-	@echo "... amqp.o"
-	@echo "... amqp.i"
-	@echo "... amqp.s"
+	@echo "... azure_event_hub.o"
+	@echo "... azure_event_hub.i"
+	@echo "... azure_event_hub.s"
+	@echo "... create_log.o"
+	@echo "... create_log.i"
+	@echo "... create_log.s"
 	@echo "... jsonParser.o"
 	@echo "... jsonParser.i"
 	@echo "... jsonParser.s"
-	@echo "... log_create.o"
-	@echo "... log_create.i"
-	@echo "... log_create.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 	@echo "... read_configuration.o"
 	@echo "... read_configuration.i"
 	@echo "... read_configuration.s"
 	@echo "... read_meters_address.o"
 	@echo "... read_meters_address.i"
 	@echo "... read_meters_address.s"
+	@echo "... rightwatts_main.o"
+	@echo "... rightwatts_main.i"
+	@echo "... rightwatts_main.s"
 .PHONY : help
 
 

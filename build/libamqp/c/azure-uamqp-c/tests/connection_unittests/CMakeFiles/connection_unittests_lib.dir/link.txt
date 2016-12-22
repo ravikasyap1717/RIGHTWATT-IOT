@@ -1,2 +1,0 @@
-/usr/bin/ar cq libconnection_unittests_lib.a  CMakeFiles/connection_unittests_lib.dir/connection_unittests.cpp.o CMakeFiles/connection_unittests_lib.dir/__/__/src/connection.c.o
-/usr/bin/ranlib libconnection_unittests_lib.a

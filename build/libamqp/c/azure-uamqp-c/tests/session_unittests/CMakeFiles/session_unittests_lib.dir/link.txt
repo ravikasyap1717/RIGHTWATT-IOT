@@ -1,2 +1,0 @@
-/usr/bin/ar cq libsession_unittests_lib.a  CMakeFiles/session_unittests_lib.dir/session_unittests.cpp.o CMakeFiles/session_unittests_lib.dir/__/__/src/session.c.o
-/usr/bin/ranlib libsession_unittests_lib.a

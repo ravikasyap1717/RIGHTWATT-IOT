@@ -6,8 +6,12 @@
  */
 #include "jsonParser.h"
 
+/*
+ * key to read meter address in json and create structure
+ */
 char *KEYS[] = {"property", "register", "value"};
 
+/* create json output file according to rightwatts requirements*/
 void create_json(struct regval *reg_val, int index, int id)
 {
 	FILE *fp;
@@ -18,38 +22,32 @@ void create_json(struct regval *reg_val, int index, int id)
 	struct tm* tm_info;
 	time(&now);
 	tm_info = localtime(&now);
-	strftime(DateTime, 35, "%Y-%m-%dT%H:%M:%S.00000+05:30", tm_info);
-
+	strftime(DateTime, 35, "%Y-%m-%dT%H:%M:%S.00000+05:30", tm_info); // generate date time
 
 	RW_CLIENT_ID = read_meter_parameter_string("RW_CLIENT_ID");
 	RW_EQUIPMENT_ID_PREFIX = read_meter_parameter_string("RW_EQUIPMENT_ID_PREFIX");
 	sprintf(RW_EQUIPMENT_ID,"%s%03d",RW_EQUIPMENT_ID_PREFIX,id);
 
-	//-------- for different file -------------------//
-/*	char filename[20];
-	sprintf(filename, "test%d.json", no);
-
-	fp = fopen(filename,"w+");*/
-	fp = fopen("output_generated_meter_readings.json","w+");
+	fp = fopen("output_generated_meter_readings.json","w+");  // create output file to store json address value
 	fprintf(fp, "\{");
-	fprintf(fp, "\t\"RW_ClientId\": \"%s\", ",RW_CLIENT_ID);
-	fprintf(fp, "\t\"RW_EquipmentId\": \"%s\", ",RW_EQUIPMENT_ID);
-	fprintf(fp, "\t\"RW_ReadingDateTime\": \"%s\",",DateTime);
+	fprintf(fp, "\"RW_ClientId\":\"%s\",",RW_CLIENT_ID);
+	fprintf(fp, "\"RW_EquipmentId\":\"%s\",",RW_EQUIPMENT_ID);
+	fprintf(fp, "\"RW_ReadingDateTime\":\"%s\",",DateTime);
 
 
 	for(int i=0; i<=index; i++)
 	{
-		fprintf(fp, "\t\"%s\" : ", reg_val[i].prop);
+		fprintf(fp, "\"%s\":",reg_val[i].prop);
 		// fprintf(fp, "\"register\": \"%d\", ", reg_val[i].reg);
 		if(i == index)
 		{
-			fprintf(fp, "%.2f  ", reg_val[i].value);
+			fprintf(fp, "%.2f",reg_val[i].value);
 		}
 		else
 		{	if(strcmp(reg_val[i].prop,"Run_U")==0 ||strcmp(reg_val[i].prop,"Run_G")==0 || strcmp(reg_val[i].prop,"Max_DM_Occurrence")==0)
-			fprintf(fp, "%ld,  ", reg_val[i].value);
+			fprintf(fp, "%ld,", reg_val[i].value);
 		else
-			fprintf(fp, "%.2f,  ", reg_val[i].value);
+			fprintf(fp, "%.2f,", reg_val[i].value);
 		}
 	}
 	fprintf(fp, "}");
@@ -57,6 +55,9 @@ void create_json(struct regval *reg_val, int index, int id)
 	fclose(fp);
 }
 
+/*
+ * @loadfile() will check the filename and read file till end
+ */
 char * loadfile(char *file, long *size)
 {
 
@@ -65,7 +66,7 @@ char * loadfile(char *file, long *size)
     char *js;
 
     fp = fopen ( file , "rb" );
-    if( !fp ) perror("blah.txt"),exit(1);
+    if( !fp ) LOG_ERROR("%s file doesn't exits",file),exit(1);
 
     fseek( fp , 0L , SEEK_END);
     lSize = ftell( fp );
@@ -91,6 +92,10 @@ char * loadfile(char *file, long *size)
     return js;
 
 }
+
+/*
+ *@ json_parser() will check json format and pass if it's correct
+ */
 int json_parser(struct regval *reg_val, char *js)
 {
 

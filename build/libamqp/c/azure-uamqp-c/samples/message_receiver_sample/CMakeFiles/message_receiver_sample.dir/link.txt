@@ -1,1 +1,0 @@
-/usr/bin/cc     CMakeFiles/message_receiver_sample.dir/main.c.o  -o message_receiver_sample -rdynamic ../../libuamqp.a ../../azure-c-shared-utility/c/libaziotsharedutil.a -lssl -lcrypto -lcurl -lssl -lcrypto -lpthread 

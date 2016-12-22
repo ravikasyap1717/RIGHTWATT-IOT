@@ -1,2 +1,0 @@
-/usr/bin/ar cq libconnectionstringparser_unittests_lib.a  CMakeFiles/connectionstringparser_unittests_lib.dir/connectionstringparser_unittests.cpp.o CMakeFiles/connectionstringparser_unittests_lib.dir/__/__/src/connection_string_parser.c.o
-/usr/bin/ranlib libconnectionstringparser_unittests_lib.a

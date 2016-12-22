@@ -1,2 +1,0 @@
-/usr/bin/ar cq libJSON_PARSER.a  CMakeFiles/JSON_PARSER.dir/buf.c.o CMakeFiles/JSON_PARSER.dir/jsmn.c.o CMakeFiles/JSON_PARSER.dir/json.c.o CMakeFiles/JSON_PARSER.dir/log.c.o
-/usr/bin/ranlib libJSON_PARSER.a

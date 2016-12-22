@@ -1,2 +1,0 @@
-/usr/bin/ar cq libsasl_mechanism_unittests_lib.a  CMakeFiles/sasl_mechanism_unittests_lib.dir/sasl_mechanism_unittests.cpp.o CMakeFiles/sasl_mechanism_unittests_lib.dir/__/__/src/sasl_mechanism.c.o
-/usr/bin/ranlib libsasl_mechanism_unittests_lib.a

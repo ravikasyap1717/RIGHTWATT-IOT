@@ -10,18 +10,17 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "jsmn.h"
 #include <inttypes.h>
+#include <time.h>
+#include "buf.h"
+#include "create_log.h"
+#include "jsmn.h"
 #include "json.h"
 #include "log.h"
-#include "buf.h"
-#include <time.h>
 
 const char* RW_EQUIPMENT_ID_PREFIX;
 const char* RW_CLIENT_ID;
 const char RW_EQUIPMENT_ID[20];
-//#define RW_ClientId "Raspberrypi.Rightwatt"
-//#define RW_EquipmentId "111-010-"
 
 struct regval
 {
@@ -30,7 +29,6 @@ struct regval
     float value;
 };
 enum tags {prop, reg, val, none};
-
 
 void create_json(struct regval *reg_val, int index,int id);
 char * loadfile(char *file, long *size);

@@ -1,2 +1,0 @@
-/usr/bin/ar cq libframe_codec_unittests_lib.a  CMakeFiles/frame_codec_unittests_lib.dir/frame_codec_unittests.cpp.o CMakeFiles/frame_codec_unittests_lib.dir/__/__/src/frame_codec.c.o
-/usr/bin/ranlib libframe_codec_unittests_lib.a

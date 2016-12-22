@@ -1,2 +1,0 @@
-/usr/bin/ar cq libeventhub_client.a  CMakeFiles/eventhub_client.dir/src/connection_string_parser.c.o CMakeFiles/eventhub_client.dir/src/eventdata.c.o CMakeFiles/eventhub_client.dir/src/eventhubclient.c.o CMakeFiles/eventhub_client.dir/src/eventhubclient_ll.c.o CMakeFiles/eventhub_client.dir/src/version.c.o
-/usr/bin/ranlib libeventhub_client.a

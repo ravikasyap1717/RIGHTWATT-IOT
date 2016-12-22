@@ -1,2 +1,0 @@
-/usr/bin/ar cq libsasl_frame_codec_unittests_lib.a  CMakeFiles/sasl_frame_codec_unittests_lib.dir/sasl_frame_codec_unittests.cpp.o CMakeFiles/sasl_frame_codec_unittests_lib.dir/__/__/src/sasl_frame_codec.c.o
-/usr/bin/ranlib libsasl_frame_codec_unittests_lib.a

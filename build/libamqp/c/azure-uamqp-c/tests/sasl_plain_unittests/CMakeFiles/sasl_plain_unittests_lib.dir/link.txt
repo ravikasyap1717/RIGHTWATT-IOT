@@ -1,2 +1,0 @@
-/usr/bin/ar cq libsasl_plain_unittests_lib.a  CMakeFiles/sasl_plain_unittests_lib.dir/sasl_plain_unittests.cpp.o CMakeFiles/sasl_plain_unittests_lib.dir/__/__/src/sasl_plain.c.o
-/usr/bin/ranlib libsasl_plain_unittests_lib.a

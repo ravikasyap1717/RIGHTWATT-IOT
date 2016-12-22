@@ -34,9 +34,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/build/libamqp/c/cmake_install.cmake")
-  include("/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/build/libmodbus/cmake_install.cmake")
-  include("/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/build/libjsonparser/cmake_install.cmake")
+  include("/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/build/lib_azure_event_hub/c/cmake_install.cmake")
+  include("/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/build/lib_modbus/cmake_install.cmake")
+  include("/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/build/lib_json/cmake_install.cmake")
 
 endif()
 
