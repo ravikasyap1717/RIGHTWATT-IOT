@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/lib_azure_event_hub/c/azure-uamqp-c/inc/amqpalloc.h
+cstddef
+-
+cstdbool
+-
+cstdlib
+-
+stddef.h
+-
+stdbool.h
+-
+stdlib.h
+-
+
+/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/lib_azure_event_hub/c/azure-uamqp-c/inc/sasl_mechanism.h
+
+/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/lib_azure_event_hub/c/azure-uamqp-c/inc/sasl_plain.h
+../../../../lib_azure_event_hub/c/azure-uamqp-c/inc/sasl_mechanism.h
+/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/lib_azure_event_hub/c/azure-uamqp-c/inc/sasl_mechanism.h
+
+/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/lib_azure_event_hub/c/azure-uamqp-c/src/sasl_plain.c
+stdlib.h
+-
+crtdbg.h
+-
+string.h
+-
+../../../../lib_azure_event_hub/c/azure-uamqp-c/inc/sasl_plain.h
+/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/lib_azure_event_hub/c/azure-uamqp-c/inc/sasl_plain.h
+../../../../lib_azure_event_hub/c/azure-uamqp-c/inc/amqpalloc.h
+/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/lib_azure_event_hub/c/azure-uamqp-c/inc/amqpalloc.h
+

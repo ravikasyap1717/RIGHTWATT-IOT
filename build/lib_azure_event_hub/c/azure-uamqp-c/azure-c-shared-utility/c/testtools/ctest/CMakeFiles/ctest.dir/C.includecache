@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/lib_azure_event_hub/c/azure-uamqp-c/azure-c-shared-utility/c/testtools/ctest/inc/ctest.h
+cstddef
+-
+cstring
+-
+cstdio
+-
+../../../../../../../../lib_azure_event_hub/c/azure-uamqp-c/azure-c-shared-utility/c/testtools/ctest/inc/ctest_macros.h
+/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/lib_azure_event_hub/c/azure-uamqp-c/azure-c-shared-utility/c/testtools/ctest/inc/ctest_macros.h
+csetjmp
+-
+setjmp.h
+-
+stdio.h
+-
+stddef.h
+-
+string.h
+-
+stdio.h
+-
+../../../../../../../../lib_azure_event_hub/c/azure-uamqp-c/azure-c-shared-utility/c/testtools/ctest/inc/ctest_macros.h
+/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/lib_azure_event_hub/c/azure-uamqp-c/azure-c-shared-utility/c/testtools/ctest/inc/ctest_macros.h
+setjmp.h
+-
+stdint.h
+-
+
+/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/lib_azure_event_hub/c/azure-uamqp-c/azure-c-shared-utility/c/testtools/ctest/inc/ctest_macros.h
+
+/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/lib_azure_event_hub/c/azure-uamqp-c/azure-c-shared-utility/c/testtools/ctest/src/ctest.c
+../../../../../../../../lib_azure_event_hub/c/azure-uamqp-c/azure-c-shared-utility/c/testtools/ctest/inc/ctest.h
+/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/lib_azure_event_hub/c/azure-uamqp-c/azure-c-shared-utility/c/testtools/ctest/inc/ctest.h
+stdio.h
+/home/ravi/Documents/EclipseWorkSpace/RIGHTWATT-IOT/lib_azure_event_hub/c/azure-uamqp-c/azure-c-shared-utility/c/testtools/ctest/src/stdio.h
+

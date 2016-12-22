@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/send_batch.dir/send_batch.c.o CMakeFiles/send_batch.dir/linux/main.c.o  -o send_batch -rdynamic ../../libeventhub_client.a ../../../azure-uamqp-c/libuamqp.a ../../../azure-uamqp-c/azure-c-shared-utility/c/libaziotsharedutil.a -lcurl -lssl -lcrypto -lpthread 

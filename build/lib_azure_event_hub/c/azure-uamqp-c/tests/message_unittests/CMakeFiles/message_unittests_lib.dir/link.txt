@@ -1,0 +1,2 @@
+/usr/bin/ar cq libmessage_unittests_lib.a  CMakeFiles/message_unittests_lib.dir/message_unittests.cpp.o CMakeFiles/message_unittests_lib.dir/__/__/src/message.c.o
+/usr/bin/ranlib libmessage_unittests_lib.a

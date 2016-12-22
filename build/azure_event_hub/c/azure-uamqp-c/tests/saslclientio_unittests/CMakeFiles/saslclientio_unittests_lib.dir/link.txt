@@ -1,0 +1,2 @@
+/usr/bin/ar cq libsaslclientio_unittests_lib.a  CMakeFiles/saslclientio_unittests_lib.dir/saslclientio_unittests.cpp.o CMakeFiles/saslclientio_unittests_lib.dir/__/__/src/saslclientio.c.o
+/usr/bin/ranlib libsaslclientio_unittests_lib.a

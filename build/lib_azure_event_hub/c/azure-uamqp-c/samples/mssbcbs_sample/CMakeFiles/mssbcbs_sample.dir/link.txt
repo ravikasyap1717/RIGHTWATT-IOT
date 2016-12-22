@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/mssbcbs_sample.dir/main.c.o  -o mssbcbs_sample -rdynamic ../../libuamqp.a ../../azure-c-shared-utility/c/libaziotsharedutil.a -lssl -lcrypto -lcurl -lssl -lcrypto -lpthread 
